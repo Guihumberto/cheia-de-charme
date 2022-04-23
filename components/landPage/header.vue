@@ -19,7 +19,7 @@
           </p>
           <v-btn href="#about" tile color="#A7121D" dark>Sobre </v-btn>
           <v-btn @click="whatsapp" color="success" dark> Contato<v-icon class="ml-1">mdi-whatsapp</v-icon> </v-btn>
-          <v-btn @click="share" > <v-icon>mdi-share</v-icon> </v-btn>
+          <v-btn icon @click="share" dark > <v-icon>mdi-share-variant</v-icon> </v-btn>
           
         </v-col>
       </v-row>

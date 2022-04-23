@@ -3,7 +3,9 @@
       <v-container style="max-width: 1080px" class="">
         <v-tabs centered>
           <v-tab>
-            <v-btn text @click="scroll('header')">cheia de charme</v-btn>
+            <v-btn text @click="scroll('header')">
+              <v-icon small color="#A7121D" class="mr-1">mdi-snake</v-icon>
+              cheia de charme</v-btn>
           </v-tab>
           <v-tab>
             <v-btn text @click="scroll('store')">Loja</v-btn>
