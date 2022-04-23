@@ -14,22 +14,32 @@
               height="300px"
             >
               <span
-                class="text-h5 white--text pl-4 pt-4 d-inline-block"
+                class="text-h5 red--text pl-4 pt-4 d-inline-block"
                 v-text="photo.text"
               ></span>
             </v-img>
 
             <v-card-actions class="white justify-center">
               <v-btn
-                v-for="(social, i) in socials"
-                :key="i"
-                :color="social.color"
+                color="cyan darken-1"
                 class="white--text"
                 fab
                 icon
                 small
+                @click="whatsapp"
               >
-                <v-icon>{{ social.icon }}</v-icon>
+                <v-icon>mdi-whatsapp</v-icon>
+              </v-btn>
+              <v-btn
+                color="red lighten-3"
+                class="white--text"
+                fab
+                icon
+                small
+                target="_blank"
+                href="https://instagram.com/cheiadecharme_loja?igshid=YmMyMTA2M2Y="
+              >
+                <v-icon>mdi-instagram</v-icon>
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -44,25 +54,11 @@
         {src: '2.jpeg', text: 'Good'},
         {src: '3.jpeg', text: 'Best'},
         {src: '4.jpeg', text: 'Finest'},
-        {src: '5.jpeg', text: 'Good'},
-        {src: '6.jpeg', text: 'Best'},
-        {src: '7.jpeg', text: 'Finest'},
+        {src: '5.jpeg', text: 'Cheia'},
+        {src: '6.jpeg', text: 'de'},
+        {src: '7.jpeg', text: 'Chame'},
       ],
       types: ['Places to Be', 'Places to See'],
-      socials: [
-        {
-          icon: 'mdi-facebook',
-          color: 'indigo',
-        },
-        {
-          icon: 'mdi-whatsapp',
-          color: 'cyan darken-1',
-        },
-        {
-          icon: 'mdi-instagram',
-          color: 'red lighten-3',
-        },
-      ],
       contact:{
           title: "PROMOÇÕES",
           subtitle: "Preços especiais por tempo limitado!"
@@ -76,6 +72,11 @@
 
         return Math.floor(Math.random() * (max - min + 1)) + min
       },
+      whatsapp() {
+                const urlApi = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) ? "https://api.whatsapp.com/send" : "https://web.whatsapp.com/send" 
+                const texto = "Olá, gostaria de uma informação."
+                window.open(urlApi + "?phone=5598988442459&text=" + texto, "_blank")
+            }
     },
   }
 </script>

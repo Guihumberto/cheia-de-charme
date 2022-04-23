@@ -1,18 +1,23 @@
 <template>
     <v-app-bar app flat dark color="#111111">
-      <v-container style="max-width: 1080px" class="py-0 fill-height">
-        <v-btn icon>
-          <v-icon color="#A7121D">mdi-snake</v-icon>
-        </v-btn>
-
-        CHEIA DE CHARME
-
-        <v-spacer></v-spacer>
-
-        <v-btn text @click="scroll('store')">Loja</v-btn>
-        <v-btn text @click="scroll('sales')">Promoções</v-btn>
-        <v-btn text @click="scroll('about')"> Sobre</v-btn>
-        <v-btn text @click="scroll('contact')">Contato</v-btn>
+      <v-container style="max-width: 1080px" class="">
+        <v-tabs centered>
+          <v-tab>
+            <v-btn text @click="scroll('header')">cheia de charme</v-btn>
+          </v-tab>
+          <v-tab>
+            <v-btn text @click="scroll('store')">Loja</v-btn>
+          </v-tab>
+          <v-tab>
+            <v-btn text @click="scroll('sales')">Promoções</v-btn>
+          </v-tab>
+          <v-tab>
+            <v-btn text @click="scroll('about')"> Sobre</v-btn>
+          </v-tab>
+          <v-tab>
+            <v-btn text @click="scroll('contact')">Contato</v-btn>
+          </v-tab>
+      </v-tabs>
       </v-container>
     </v-app-bar>
 </template>

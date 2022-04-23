@@ -12,21 +12,24 @@
     >
       <v-card-text>
         <v-btn
-          v-for="icon in icons"
-          :key="icon"
+          v-for="(icon, index) in icons"
+          :key="index"
           class="mx-4 white--text"
           icon
+          target="_blank"
+          :href="icon.url"
         >
         
           <v-icon size="24px">
-            {{ icon }}
+            {{ icon.icon }}
           </v-icon>
         </v-btn>
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-            Rua XXX, Bairro Vinhais, nº XXX <br>
-            São Luis - MA, CEP 65063-010
+            Av. três, nº 06, Bairro Vinhais, <br>
+            São Luis - MA, CEP: 65071-020 <br>
+            em  frente a UEB: BALÃO MÁGICO/COLEGIO: Prof NASCIMENTO DE MORAIS
       </v-card-text>
 
       <v-divider></v-divider>
@@ -41,10 +44,9 @@
   export default {
     data: () => ({
       icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
+        {icon:'mdi-whatsapp', url:''},
+        {icon:'mdi-email', url:''},
+        {icon:'mdi-instagram', url:'https://instagram.com/cheiadecharme_loja?igshid=YmMyMTA2M2Y='},
       ],
     }),
   }

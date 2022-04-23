@@ -20,7 +20,8 @@ export default {
       return{
         contact:{
           title: "QUEM SOMOS NÓS",
-          subtitle: "Nossa história"
+          subtitle: "Nossa história",
+          icon: 'mdi-information-outline'
         }
       }
     }

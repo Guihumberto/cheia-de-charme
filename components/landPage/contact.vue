@@ -3,25 +3,35 @@
       <sectionTitle :info="contact" />
       <v-col cols="12" sm="7">
         <div class="containerJJJ">
-          <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9219181716217!2d-44.238149685244046!3d-2.532376698154745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f691312867d40b%3A0x82cd18254b0564f1!2sEasy%20Confeitaria!5e0!3m2!1spt-BR!2sbr!4v1650655978682!5m2!1spt-BR!2sbr"></iframe>
+          <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3985.9796558590256!2d-44.2513733!3d-2.513541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x475047a6e8b12d84!2zMsKwMzAnNDguOCJTIDQ0wrAxNScwNC45Ilc!5e0!3m2!1spt-BR!2sbr!4v1650720966646!5m2!1spt-BR!2sbr"></iframe>
         </div>
         </v-col>
       <v-col cols="12" sm="5">
-          <sectionTitle :info="adrress" />
+          <sectionTitle :info="address" />
           <v-card>
             <v-card-text>
-              Rua XXX, Bairro Vinhais, <br>
-              São Luis - MA, CEP: 65063-010 <br>
-              Ponto de Referência:
+              Av. três, nº 06, Bairro Vinhais, <br>
+              São Luis - MA, CEP: 65071-020 <br>
+              Ponto de Referência: em  frente a UEB: BALÃO MÁGICO/COLEGIO: Prof NASCIMENTO DE MORAIS
             </v-card-text>
           </v-card>
           <sectionTitle :info="sociais" />
           <v-card class="mt-1">
             <v-card-text>
-              Telefone <br>
-              WhatsAPP <br>
-              E-mail <br>
-              Instagram
+              <v-row>
+                <v-col cols="6">
+                  <v-icon small>mdi-cellphone</v-icon> Telefone:<br>
+                  <v-icon small>mdi-whatsapp</v-icon> WhatsAPP: <br>
+                  <v-icon small>mdi-email</v-icon> E-mail: <br>
+                  <v-icon small>mdi-instagram</v-icon> Instagram:
+                </v-col>
+                <v-col cols="6">
+                  98 98844-2459 <br>
+                  98 98844-2459 <br>
+                  cheiadecharme_loja@ <br>
+                  cheiadecharme_loja <br>
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
       </v-col>
@@ -35,15 +45,18 @@ export default {
       return{
         contact:{
           title: "CONTATO",
-          subtitle: "Endereço, contato e redes sociais"
+          subtitle: "Endereço, contato e redes sociais",
+          icon: 'mdi-cellphone'
         },
         sociais:{
           title: "Contato",
-          subtitle: null
+          subtitle: null,
+          icon: 'mdi-cellphone'
         },
-        adrress:{
+        address:{
           title: "Endereço",
-          subtitle: null
+          subtitle: null,
+          icon: 'mdi-map-marker-outline'
         },
       }
     }
