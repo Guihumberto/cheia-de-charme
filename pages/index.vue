@@ -10,6 +10,8 @@
 
     <landPage-about />
 
+    <sectionFooter />
+
   </v-container>
 </template>
 

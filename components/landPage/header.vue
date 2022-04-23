@@ -11,8 +11,8 @@
         <v-col cols="12">
           <h5 class="red--text text--darken-4 top">Moda Feminina</h5>
           <h1 class="white--text">Cheia de Charme</h1>
-          <p class="grey--text">
-            Nossa loja é especialziada em moda feminina e infantil <br />
+          <p class="grey--text" style="text-align: justify;">
+            Nossa loja é especializada em moda feminina e infantil
             em atividade há mais de 10 anos!!
             <br />
             Venha nos fazer uma visita!

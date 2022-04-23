@@ -56,7 +56,7 @@
         {src: '4.jpeg', text: 'Finest'},
         {src: '5.jpeg', text: 'Cheia'},
         {src: '6.jpeg', text: 'de'},
-        {src: '7.jpeg', text: 'Chame'},
+        {src: '7.jpeg', text: 'Charme'},
       ],
       types: ['Places to Be', 'Places to See'],
       contact:{

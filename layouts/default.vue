@@ -14,7 +14,6 @@
         > <v-icon>mdi-whatsapp</v-icon></v-btn>
       </v-container>
     </v-main>
-    <sectionFooter />
   </v-app>
 </template>
 
