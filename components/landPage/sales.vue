@@ -8,7 +8,7 @@
           sm="6"
           md="4"
         >
-          <v-card>
+          <v-card @click="dialog = true">
             <v-img
               :src="photo.src"
               height="300px"
@@ -43,6 +43,9 @@
               </v-btn>
             </v-card-actions>
           </v-card>
+          <v-dialog v-model="dialog">
+           
+          </v-dialog>
         </v-col>
       </v-row>
 </template>
@@ -50,6 +53,7 @@
 <script>
   export default {
     data: () => ({
+      dialog: false,
       photos:[
         {src: '2.jpeg', text: 'Good'},
         {src: '3.jpeg', text: 'Best'},

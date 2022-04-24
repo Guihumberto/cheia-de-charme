@@ -7,8 +7,9 @@
                 CHEIA DE CHARME
             </v-card-title>
             <v-card-text style="text-align: justify;">
-              A Loja Cheia de Charme nasceu em 2011, e vem fazendo histórias e participando de momentos incríveis na vida de nossos clientes 
-              que nos acompanham há mais de 10 anos. Venha fazer parte dessa nossa histórias.!!! Aqui você encontra as melhores promoções! Aproveite nossas ofertas: Roupas infantis, como blusas, conjuntos e Body e temos roupas femininas blusas, calças e shorts com 20%, 30% , 40% e até 50% de desconto à vista.
+              A Loja Cheia de Charme nasceu em 2011 e vem fazendo história e participando de momentos incríveis na vida dos nossos clientes que nos acompanham há mais de 10 anos. Venha fazer parte dessa história!!! <br>
+             Aproveite nossas ofertas: Roupas infantis, como blusas, conjuntos e Body e temos roupas femininas blusas, calças e shorts com 20%, 30%, ,40% e até 50% de desconto à vista. <br>
+              Aqui você encontra as melhores promoções!
             </v-card-text>
             </v-card>
         </v-col>
