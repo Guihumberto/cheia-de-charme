@@ -1,6 +1,5 @@
 <template>
-    <v-row id="sales">
-        <sectionTitle :info="contact" />
+<v-row>
         <v-col
           v-for="(photo, index) in photos"
           :key="index"
@@ -12,6 +11,8 @@
             <v-img
               :src="photo.src"
               height="300px"
+              max-width="500"
+              
             >
               <span
                 class="text-h5 red--text pl-4 pt-4 d-inline-block"
@@ -45,7 +46,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-      </v-row>
+</v-row>
 </template>
 
 <script>
@@ -53,23 +54,40 @@
     data: () => ({
       dialog: false,
       photos:[
-        {src: '2.jpeg', text: 'Good'},
-        {src: '3.jpeg', text: 'Best'},
-        {src: '4.jpeg', text: 'Finest'},
-        {src: '5.jpeg', text: 'Cheia'},
-        {src: '6.jpeg', text: 'de'},
-        {src: '7.jpeg', text: 'Charme'},
+        {src: '20.jpeg', text: 'Good'},
+        {src: '21.jpeg', text: 'Best'},
+        {src: '22.jpeg', text: 'Finest'},
+        {src: '23.jpeg', text: 'Cheia'},
+        {src: '24.jpeg', text: 'de'},
+        {src: '25.jpeg', text: 'cheia'},
+        {src: '26.jpeg', text: 'de'},
+        {src: '27.jpeg', text: 'Charme'},
+        {src: '28.jpeg', text: 'Linda'},
+        {src: '29.jpeg', text: 'Poderosa'},
+        {src: '30.jpeg', text: 'Magnífica'},
+        {src: '31.jpeg', text: 'Deslumbrante'},
+        {src: '32.jpeg', text: 'Cheia'},
+        {src: '33.jpeg', text: 'de'},
+        {src: '34.jpeg', text: 'Charme'},
+        {src: '35.jpeg', text: 'Magnífica'},
+        {src: '36.jpeg', text: 'Deslumbrante'},
+        {src: '37.jpeg', text: 'Cheia'},
+        {src: '38.jpeg', text: 'de'},
+        {src: '39.jpeg', text: 'Charme'},
+        {src: '40.jpeg', text: 'Magnífica'},
+        {src: '41.jpeg', text: 'Deslumbrante'},
+        {src: '42.jpeg', text: 'Cheia'},
+        {src: '43.jpeg', text: 'de'},
+        {src: '44.jpeg', text: 'Charme'},
+        {src: '45.jpeg', text: 'Magnífica'},
+        {src: '46.jpeg', text: 'Deslumbrante'},
+        {src: '47.jpeg', text: 'Cheia'},
+        {src: '48.jpeg', text: 'de'},
+        {src: '49.jpeg', text: 'Charme'},
+        {src: '50.jpeg', text: 'Magnífica'},
+        {src: '51.jpeg', text: 'Deslumbrante'},
       ],
-      types: ['Places to Be', 'Places to See'],
-      contact:{
-          title: "PROMOÇÕES",
-          subtitle: "Preços especiais por tempo limitado!",
-          btn: true,
-          btnTitle: 'ver mais',
-          url: '/photos'
-        }
     }),
-
     methods: {
       getImage () {
         const min = 550

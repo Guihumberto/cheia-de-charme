@@ -3,7 +3,7 @@
       <v-container style="max-width: 1080px" class="">
         <v-tabs centered>
           <v-tab>
-            <v-btn text @click="scroll('header')">
+            <v-btn text to="/">
               <v-icon small color="#A7121D" class="mr-1">mdi-snake</v-icon>
               cheia de charme</v-btn>
           </v-tab>

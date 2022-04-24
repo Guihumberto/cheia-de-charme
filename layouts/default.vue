@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <navbar />
+    <navbar :menu="menu" />
 
     <v-main style="background-color: black;">
       <v-container >
@@ -12,6 +12,22 @@
           @click="whatsapp"
           id="links-fixos"
         > <v-icon>mdi-whatsapp</v-icon></v-btn>
+        <v-dialog v-model="dialog" max-width="500">
+          <v-card DARK >
+            <v-img src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
+              <v-card-title class="mx-auto px-auto white--text display-1">CUPOM DE DESCONTO
+                <v-spacer></v-spacer>
+                <v-btn dark @click="dialog= false" icon> <v-icon>mdi-close</v-icon> </v-btn>
+              </v-card-title>
+              <v-card-text>
+                <v-img contain max-height="350" src="27.jpeg"></v-img>
+              </v-card-text>
+              <v-card-actions>
+                <v-btn @click="whatsapp" small dark color="indigo" class="mx-auto">Clique aqui para ganhar 20% de desconto!</v-btn>
+              </v-card-actions>
+            </v-img>
+          </v-card>
+        </v-dialog>
       </v-container>
     </v-main>
   </v-app>
@@ -20,14 +36,14 @@
 <script>
   export default {
     data: () => ({
-      
+      dialog: true
     }),
     methods:{
       whatsapp() {
                 const urlApi = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) ? "https://api.whatsapp.com/send" : "https://web.whatsapp.com/send" 
-                const texto = "Olá, gostaria de uma informação."
+                const texto = "Olá, gostaria de receber meus 20% de desconto dado pelo site COD: #CHEIADECHARME_LOJA_SITE."
                 window.open(urlApi + "?phone=5598988442459&text=" + texto, "_blank")
-            }
+            },
     }
   }
 </script>
