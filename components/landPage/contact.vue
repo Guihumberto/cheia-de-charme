@@ -21,18 +21,17 @@
               <v-row>
                 <v-col cols="6">
                   <v-icon small>mdi-cellphone</v-icon> Telefone:<br>
-                  <v-icon small>mdi-whatsapp</v-icon> WhatsAPP: <br>
-                  <v-icon small>mdi-email</v-icon> E-mail: <br>
                   <v-icon small>mdi-instagram</v-icon> Instagram:
                 </v-col>
                 <v-col cols="6">
                   98 98844-2459 <br>
-                  98 98844-2459 <br>
-                  cheiadecharme_loja@ <br>
                   cheiadecharme_loja <br>
                 </v-col>
               </v-row>
             </v-card-text>
+            <v-card-actions>
+              <v-btn @click="whatsapp" small block color="success"> <v-icon>mdi-whatsapp</v-icon> chamar no whatsapp</v-btn>
+            </v-card-actions>
           </v-card>
       </v-col>
   </v-row>
@@ -59,6 +58,13 @@ export default {
           icon: 'mdi-map-marker-outline'
         },
       }
+    },
+    methods:{
+      whatsapp() {
+                const urlApi = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) ? "https://api.whatsapp.com/send" : "https://web.whatsapp.com/send" 
+                const texto = "Olá, gostaria de uma informação."
+                window.open(urlApi + "?phone=5598988442459&text=" + texto, "_blank")
+            }
     }
 }
 </script>
