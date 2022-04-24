@@ -56,4 +56,8 @@
   right: 10px;
   bottom:10px;/*altura da classe*/
 }
+.tagred{
+  border: 4px solid #A7121D;
+  margin-right: 4px;
+}
 </style>
