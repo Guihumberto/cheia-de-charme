@@ -7,11 +7,11 @@
           sm="6"
           md="4"
         >
-          <v-card>
+          <v-card max-height="600">
             <v-img
               :src="photo.src"
-              height="300px"
-              max-width="500"
+              max-width="380"
+              height="500"
               
             >
               <span
